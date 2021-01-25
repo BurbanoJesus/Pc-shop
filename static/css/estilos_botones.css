@@ -1,0 +1,38 @@
+/*---------------------*/
+/*-------BOTONES-------*/
+/*---------------------*/
+.button{
+    display: flex;
+    background: linear-gradient(90deg,#0198CD 0% ,#00C5AC 100%);
+    color: #F8F4F2;
+    fill: #F8F4F2;
+    padding: 0 28px;
+    height: 44px;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    -webkit-appearance: none;
+    border: 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: all 0.25s ease;
+}
+
+.button:active,
+.button:hover
+{
+    background: linear-gradient(90deg,#028FC0 0%,#02A38F 100%);
+    /*opacity: .94;*/
+    color: #DAEEF7;
+}
+
+button.button svg,
+a.button svg,
+label.button svg
+{
+    width: 16px;
+    min-width: 16px;
+    margin-right: 8px;
+}

@@ -1,0 +1,595 @@
+/*----------------------*/
+/*--------INICIO--------*/
+/*----------------------*/
+div#inicio{
+    width: 100%;
+    max-width: 2000px;
+}
+
+div#inicio h2.main{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+div.wrap_elementos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 980px;
+    position: relative;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    /*background-image: url(/tintosoft/static/img/portafolio/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;*/
+}
+
+h2.main{
+    display: inline-flex;
+    justify-content: center;
+    font-family: 'Goldman', serif;
+    font-size: 25px;
+    width: 100%;
+    padding: 5px;
+    padding-bottom: 15px;
+    color: #00AECD;
+    text-align: center;
+    margin: 0 auto;
+}
+
+    div.wrap_elementos div.elemento{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #212121;
+        width: 430px;
+        font-family: 'Roboto';
+        /*height: 700px;*/
+        position: relative;
+        margin-left: 40px;
+        margin-bottom: 40px;
+        overflow: hidden;
+    }
+
+        div.wrap_elementos div.elemento .file_multimedia{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 250px;
+            padding: 20px 10px;
+            background: radial-gradient(circle at center,#095A7E 0, #000000 90%, #000000 100%);
+        }
+
+        div.wrap_elementos div.elemento .file_multimedia .file{
+            object-fit: contain;
+            width: 100%;
+            max-height: 100%;
+        }
+
+    div.wrap_elementos div.elemento .props{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 8px;
+        width: 100%;
+    }
+
+        div.wrap_elementos div.elemento .props .nombre{
+            display: inline-flex;
+            align-items: center;
+            color: #FFFFFF;
+            text-shadow: 0 0 0 20px #FFF;
+        }
+            div.wrap_elementos div.elemento .props .nombre span{
+                display: inline-flex;
+                align-items: center;
+                font-size: 20px;
+                padding: 12px;
+                padding-bottom: 10px;
+            }
+
+        div.wrap_elementos div.elemento .props .precio{
+            display: inline-flex;
+            align-items: center;
+            flex-direction: column;
+            color: #FFFFFF;
+            text-shadow: 0 0 0 20px #FFF;
+        }
+
+            div.wrap_elementos div.elemento .props .precio span.anterior{
+                display: inline-flex;
+                font-size: 18px;
+                color: #D8D8D8;
+                padding: 0 5px;
+            }
+
+            div.wrap_elementos div.elemento .props .precio span.nuevo{
+                display: inline-flex;
+                align-items: center;
+                font-size: 34px;
+                color: #00AECD;
+                padding: 0 4px;
+            }
+
+                div.wrap_elementos div.elemento .props .precio span.nuevo p{
+                    font-size: 21px;
+                    padding: 0 10px;
+                }
+
+        div.wrap_elementos div.elemento .props .lista{
+            display: inline-flex;
+            align-items: center;
+            font-size: 16px;
+            height: 45px;
+            width: 95%;
+            padding: 0 8px;
+            color: #FFFFFF;
+            text-shadow: 0 0 0 20px #FFF;
+            border-bottom: 1px solid #4D4D4D;
+        }
+
+        div.wrap_elementos div.elemento .props .lista.last{
+            border-bottom: 0;
+        }
+
+            div.wrap_elementos div.elemento .props .lista .a{
+                display: inline-flex;
+                align-items: center;
+                justify-content: flex-end;
+                text-align: right;
+                width: 50%;
+                min-width: 50%;
+                padding: 0 10px;
+            }
+
+            div.wrap_elementos div.elemento .props .lista .b{
+                display: inline-flex;
+                align-items: center;
+                width: auto;
+                padding: 0 10px;
+            }
+
+        div.wrap_elementos div.elemento .props .content_button{
+            margin: 10px auto;
+        }
+
+        /*div.descuento{
+            width: 0;
+            height: 0;
+            border-right: 35px solid #13AEE4;
+            border-top: 35px solid #13AEE4;
+            border-left: 35px solid transparent;
+            border-bottom: 35px solid transparent;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 11;
+        }*/
+
+        div.wrap_elementos div.descuento{
+            width: 88px; 
+            height: 35px; 
+            background: linear-gradient(90deg,#0198CD 0% ,#00C5AC 100%);
+            -webkit-transform: skew(30deg);
+            -moz-transform: skew(30deg);
+            -ms-transform: skew(30deg);
+            -o-transform: skew(30deg);
+            transform: skew(30deg);
+            position: absolute;
+            top: 0px;
+            right: -10px;
+            z-index: 8;
+        }
+
+        div.wrap_elementos div.elemento span.str_string{
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            color: #FFF;
+            /*transform: rotate(45deg);*/
+            font-weight: bold;
+            font-size: 20px;
+            z-index: 9;
+        }
+
+/*----------------------------*/
+div.wrap_contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    /*box-shadow: 0 0 18px 18px #000 inset;
+    background: url(/tintosoft/static/img/default/libreta.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;*/
+    position: relative;
+    z-index: 1;
+}
+
+    div.capa_background_contacto{
+        width: 100%;
+        height: 100%;
+        background: #00531D;
+        opacity: .6;
+        position: absolute;
+        z-index: 2;
+    }
+    
+    div.wrap_contacto .titulo_contacto{
+        width: 100%;
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        color: #FFFFFF;
+        padding-top: 50px;
+        padding-bottom: 35px;
+        position: relative;
+        z-index: 3;
+    }
+
+    div.wrap_contacto div.content_contacto{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        background: var(--gris_secundario);
+        border-radius: 4px;
+        padding: 30px;
+        position: relative;
+        z-index: 3;
+    }
+
+    div.wrap_contacto div.content_contacto form.form_contacto{
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    form.form_contacto div.input{
+        width: 100%;
+        padding: 7px;
+    }
+
+    form.form_contacto div.input input,
+    form.form_contacto div.input textarea
+    {
+        display: inline-flex;
+        width: 100%;
+        font-family: serif;
+        color: #FEFEFE;
+        font-size: 17px;
+        background: #656565;
+        padding: 9px 14px;
+        border: 1px solid var(--border_gris);
+        border-radius: 2px;
+    }
+
+    form.form_contacto div.input input::placeholder,
+    form.form_contacto div.input textarea::placeholder{
+        color: #FCFCFC;
+        font-size: 17px;
+    }
+
+    form.form_contacto div.input.s50{
+        width: 50%;
+    }
+
+    form.form_contacto div.content_button{
+        padding-top: 12px;
+    }
+
+    form.form_contacto button.button{
+        font-size: 15px;
+        fill: white;
+        margin-left: 8px;
+        margin-right: 0;
+        margin-top: 2px;
+    }
+
+    form.form_contacto button.button svg{
+        width: 14px;
+        min-width: 14px;
+        fill: white;
+        margin-left: 7px;
+        margin-right: 0;
+        margin-top: 2px;
+    }
+
+/*-----------------------*/
+
+div.chat_redes{
+    display: block;
+    text-align: right;
+    width: auto;
+    position: fixed;
+    right: 14px;
+    bottom: 14px;
+    z-index: 10;
+}  
+
+    div.chat_elemento{
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        margin: 5px 0;
+        border-radius: 50%;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+        cursor: pointer;
+        transition: all .25s ease-out;
+    }
+
+    div.chat_elemento:hover{
+        /*box-shadow: 0 2px 10px rgba(255, 255, 255, .24), 0 2px 10px rgba(255, 255, 255, .35);*/
+        opacity: .86;
+    }
+
+    div.chat_elemento.correo{
+        background: #1E46A2;
+    }
+
+    div.chat_elemento.msj{
+        background: linear-gradient(90deg,#0198CD 0% ,#00C5AC 100%);
+    }
+
+    div.correo svg{
+        width: 28px;
+        fill: white;
+    }
+
+    div.msj svg{
+        width: 36px;
+        fill: white;
+    }
+
+/*----------------------*/
+/*----QUIENES SOMOS-----*/
+/*----------------------*/
+
+div#quienes_somos.contenido{
+    padding-bottom: 50px;
+    font-family: 'Goldman', serif;
+}
+
+div#quienes_somos div.info_about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex-direction: column;*/
+    background: var(--gris_secundario);
+    width: 500px;
+    padding: 0px 25px;
+    margin: 0 auto;
+    border-radius: 10px;
+}  
+
+div#quienes_somos div.info_about.b{
+    background: #F5F5F5;
+}
+    
+    div#quienes_somos div.info_about .info_desc{
+        display: inline-flex;  
+        flex-direction: column;
+        justify-content: center;
+        padding: 18px;
+    }
+
+        div#quienes_somos div.info_about .info_desc p{
+            font-size: 18px;
+            line-height: 122%;
+            color: #BCBCBC;
+            text-align: justify;
+            margin: auto;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+    .icon_about{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 3px solid #00AECD;
+        margin: auto;
+        /*background: linear-gradient(90deg, #0198CD 0%, #0198CD 100%);*/
+    }   
+
+        .icon_about .file{
+            width: 38px;
+            fill: #00AECD;
+            object-fit: contain;
+        }
+    
+    div#quienes_somos div.info_about div.lista_numeros,
+    div#quienes_somos div.info_about div.lista_ul
+    {
+        display: block;
+        width: 100%;
+        margin: auto;
+        /*flex-direction: column;*/
+        /*align-items: flex-start;*/
+        text-align: left;
+    }
+
+    div#quienes_somos div.info_about div.lista_numeros p{
+        text-align: left;
+    }
+
+    div#quienes_somos div.info_about div.lista_ul p:before{
+        content: '';
+        display: inline-flex;
+        width: 10px;
+        height: 10px;
+        background: #05598E;
+        border-radius: 50%;
+        margin-right: 9px;
+    }
+
+    div#quienes_somos div.img.info_about img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/*-------------------*/
+/*-----TERMINOS------*/
+/*-------------------*/
+
+div.content_about{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 900px;
+    padding: 20px;
+    margin: 15px auto;
+}
+
+    div.content_about h2{
+        width: 100%;
+        font-size: 24px;
+        color: var(--main);
+        font-weight: bold;
+        padding-bottom: 11px;
+    }
+
+    div.content_about h2.main{
+        font-size: 25px;
+        color: var(--main);
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    div.content_about h3{
+        width: 100%;
+        font-size: 22px;
+        color: var(--main);
+        padding-bottom: 10px;
+    }
+
+    div.content_about p{
+        display: inline-flex;
+        align-items: flex-start;
+        font-size: 18px;
+        color: #D0D0D0;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+
+    div.content_about p.lista_1{
+        font-size: 18px;
+        color: #D0D0D0;
+    }
+
+    div.content_about p.lista_2{
+        font-size: 18px;
+    }
+
+    div.content_about p.lista_1:before{
+        content: '';
+        display: inline-flex;
+        min-width: 10px;
+        min-height: 10px;
+        width: 10px;
+        height: 10px;
+        background: #037EA1;
+        margin-top: 5px;
+        border-radius: 50%;
+        margin-right: 9px;
+    }
+
+    div.content_about p.lista_2:before{
+        content: '';
+        display: inline-flex;
+        min-width: 12px;
+        min-height: 4px;
+        width: 12px;
+        height: 5px;
+        background: #037EA1;
+        margin-top: 8px;
+        border-radius: 3px;
+        margin-right: 9px;
+    }
+
+/*------------------------*/
+/*--PREGUNTAS FRECUENTES--*/
+/*------------------------*/
+
+div.content_preguntas_frecuentes{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 800px;
+    padding: 40px 20px;
+    /*font-family: 'Roboto';*/
+    margin: 15px auto;
+}
+
+    div.content_preguntas_frecuentes h2.main{
+        font-size: 28px;
+        color: #1F5875;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    div.content_preguntas_frecuentes div.accordion_elemento .nombre_elemento{
+        justify-content: flex-start;
+        background: #ECF5FE;
+        font-size: 20px;
+        color: #366E8B;
+        padding: 12px 15px;
+        border-radius: 6px;
+        border: 2px solid transparent;
+        margin: 2px 0;
+        text-align: left;
+    }
+
+        div.content_preguntas_frecuentes div.accordion_elemento .nombre_elemento span{
+            font-size: 18px;
+        }
+
+    div.content_preguntas_frecuentes div.accordion_elemento .wrap_contenido{
+        padding: 6px 15px;
+        padding-left: 45px;
+    }
+
+        div.content_preguntas_frecuentes div.accordion_elemento .wrap_contenido p{
+            font-size: 19px;
+            color: #6E6E6E;
+            padding-bottom: 15px;
+        }
+
+    div.content_preguntas_frecuentes div.accordion_elemento .nombre_elemento .open_ac{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    div.content_preguntas_frecuentes div.accordion_elemento .nombre_elemento .open_ac div.a{
+        background: #366E8B;
+        width: 11px;
+        height: 3px;
+        border-radius: 3px;
+    }
+
+    div.content_preguntas_frecuentes div.accordion_elemento .nombre_elemento .open_ac div.b{
+        display: inline-flex;
+        width: 3px;
+        height: 11px;
+        background: #366E8B;
+        border-radius: 3px;
+        position: absolute;
+        left: 4px;
+        bottom: -4px;
+        transition: all .4s ease;
+    }
+
+/*--------------------*/
+/*--------------------*/
+/*--------------------*/
